@@ -1,0 +1,144 @@
+/*
+============Page Loader==============
+<div class="loaderMain">
+      <div class="loaderMainPos">
+      <div id="floatingCirclesG">
+      <div id="frotateG_01" class="f_circleG"></div>
+      <div id="frotateG_02" class="f_circleG"></div>
+      <div id="frotateG_03" class="f_circleG"></div>
+      <div id="frotateG_04" class="f_circleG"></div>
+      <div id="frotateG_05" class="f_circleG"></div>
+      <div id="frotateG_06" class="f_circleG"></div>
+      <div id="frotateG_07" class="f_circleG"></div>
+      <div id="frotateG_08" class="f_circleG"></div>
+      </div>
+      </div>
+</div>
+*/
+
+/*
+============Overlay Page Loader==============
+<div class="loaderMain  loaderOverlay">
+      <div class="loaderMainPos">
+      <div id="floatingCirclesG">
+      <div id="frotateG_01" class="f_circleG"></div>
+      <div id="frotateG_02" class="f_circleG"></div>
+      <div id="frotateG_03" class="f_circleG"></div>
+      <div id="frotateG_04" class="f_circleG"></div>
+      <div id="frotateG_05" class="f_circleG"></div>
+      <div id="frotateG_06" class="f_circleG"></div>
+      <div id="frotateG_07" class="f_circleG"></div>
+      <div id="frotateG_08" class="f_circleG"></div>
+      </div>
+      </div>
+</div>
+*/
+
+/**********************
+Loader Effects css 
+**********************/
+
+.loaderOverlay{ background:rgba(0,0,0,.2);} /* When u need Overlay put add also this class with loader */
+
+/*1.Loader for Page Load*/
+.loaderMain{position:fixed; top:57px; margin-left:-8px; width:100%; height:100%; z-index:99999;}
+.loaderMain .loaderMainPos{left:50%; top:50%; margin:-65px 0px 0px -35px; position:absolute;}
+
+/*2. Loader For Any Div Content Load*/
+.mapLoader{position:relative;} /* this class put on his parent div */
+.mapLoader .maploaderSpace{position:absolute; left:0px; top:0px; width:100%; height:100%; z-index:99;}
+.mapLoader .maploaderSpace .maploaderPos{left:50%; top:50%; margin:-35px 0px 0px -35px; position:absolute;}
+
+/* 3. no Data Found */
+.disPlayTable{position:relative; display:table; vertical-align: middle;width: 100%; height:100%; text-align:center; }
+.noDataFound{box-sizing: border-box; display: table-cell; text-align: center; vertical-align: middle; font-size:14px; color:#808080; font-weight:400;}
+
+
+/*On Full Page*/
+.containerNoDataOnPage{position:relative;}
+.noDataOnPage{
+position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);font-size:14px; color:#808080; font-weight:400;
+}
+
+/*for Report and dashboard grid*/
+.disPlayTable{position:relative; display: table; vertical-align: middle;width: 100%; height:100%; text-align:center; }
+.noDataFound{box-sizing: border-box; display: table-cell; text-align: center; vertical-align: middle; font-size:14px; color:#808080; font-weight:400;}
+
+
+#floatingCirclesG{  position:relative; width:70px; height:70px; margin:auto; transform:scale(0.6); -o-transform:scale(0.6); -ms-transform:scale(0.6);        -webkit-transform:scale(0.6); -moz-transform:scale(0.6);}
+.f_circleG{ position:absolute; background-color:rgb(242,242,242); height:13px; width:13px; border-radius:7px; -o-border-radius:7px; -ms-border-radius:7px;
+ -webkit-border-radius:7px;  -moz-border-radius:7px; animation-name:f_fadeG;  -o-animation-name:f_fadeG; -ms-animation-name:f_fadeG; -webkit-animation-name:f_fadeG; -moz-animation-name:f_fadeG; animation-duration:1.2s; -o-animation-duration:1.2s; -ms-animation-duration:1.2s; -webkit-animation-duration:1.2s;
+ -moz-animation-duration:1.2s; animation-iteration-count:infinite; -o-animation-iteration-count:infinite; -ms-animation-iteration-count:infinite;
+ -webkit-animation-iteration-count:infinite;  -moz-animation-iteration-count:infinite; animation-direction:normal; -o-animation-direction:normal;
+ -ms-animation-direction:normal;  -webkit-animation-direction:normal;  -moz-animation-direction:normal;}
+#frotateG_01{ left:0; top:29px; animation-delay:0.45s; -o-animation-delay:0.45s; -ms-animation-delay:0.45s; -webkit-animation-delay:0.45s; -moz-animation-delay:0.45s;}
+#frotateG_02{ left:8px;  top:8px; animation-delay:0.6s; -o-animation-delay:0.6s; -ms-animation-delay:0.6s; -webkit-animation-delay:0.6s; -moz-animation-delay:0.6s;}
+#frotateG_03{ left:29px; top:0; animation-delay:0.75s; -o-animation-delay:0.75s; -ms-animation-delay:0.75s; -webkit-animation-delay:0.75s; -moz-animation-delay:0.75s;}
+#frotateG_04{ right:8px; top:8px; animation-delay:0.9s; -o-animation-delay:0.9s; -ms-animation-delay:0.9s; -webkit-animation-delay:0.9s; -moz-animation-delay:0.9s;}
+#frotateG_05{ right:0; top:29px; animation-delay:1.05s; -o-animation-delay:1.05s; -ms-animation-delay:1.05s; -webkit-animation-delay:1.05s;-moz-animation-delay:1.05s;}
+#frotateG_06{ right:8px; bottom:8px; animation-delay:1.2s; -o-animation-delay:1.2s; -ms-animation-delay:1.2s; -webkit-animation-delay:1.2s;-moz-animation-delay:1.2s;}
+#frotateG_07{ left:29px;  bottom:0; animation-delay:1.35s;  -o-animation-delay:1.35s; -ms-animation-delay:1.35s; -webkit-animation-delay:1.35s;       -moz-animation-delay:1.35s;}
+#frotateG_08{ left:8px; bottom:8px; animation-delay:1.5s; -o-animation-delay:1.5s; -ms-animation-delay:1.5s; -webkit-animation-delay:1.5s; -moz-animation-delay:1.5s;}
+
+@keyframes f_fadeG{
+    0%{background-color:rgb(0,0,0);}
+    100%{background-color:rgb(242,242,242);}
+}
+
+@-o-keyframes f_fadeG{
+    0%{ background-color:rgb(0,0,0);}
+    100%{background-color:rgb(242,242,242);}
+}
+
+@-ms-keyframes f_fadeG{
+    0%{ background-color:rgb(0,0,0);}
+    100%{ background-color:rgb(242,242,242);}
+}
+
+@-webkit-keyframes f_fadeG{
+    0%{background-color:rgb(0,0,0);}
+    100%{background-color:rgb(242,242,242);}
+}
+
+@-moz-keyframes f_fadeG{
+    0%{background-color:rgb(0,0,0);}
+    100%{background-color:rgb(242,242,242);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*1*/
+.noConversation{position:absolute; top:50%; width:100%; text-align:center; font-size:18px; color:#999999; font-weight:400;}
+.posRelative{position:relative;}
+/*2*/
+
+
+

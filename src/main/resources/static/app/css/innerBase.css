@@ -1,0 +1,152 @@
+@import url(css_thirdParty/bootstrap.css);
+@import url(../css/datetimepicker.css);
+@import url(css_thirdParty/font-awesome.min.css);
+@import url(../css/leftNav.css);
+@import url(../css/loader.css);
+@import url(../css/common.css);
+@import url(../css/checkbox.css);
+@import url(../css/filters.css);
+@import url('../css/extra.css');
+@import url('css_thirdParty/jquery.bxslider.css');
+@import url('../css/calenderDropDown.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700');
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700');
+/*****************************************
+Common Small Class - Css
+*****************************************/
+ht ml{overflow:hidden;}
+body{background-color:#fdfdfd; font-family:'Open Sans', sans-serif; color:#333; font-weight:400; font-size:14px; overflow-x:auto; letter-spacing: 0.3px; margin:0px; padding:0px;}
+html, body {height: 100%;}
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak { display: none !important;}
+.addSticky{position: fixed; top:57px; padd ing:10px; wi dth:calc(100%-200px); wi dth:100%; paddi ng-left:215px !important; z-index:9; r ight:0;}
+
+/* START FROM 21 SEPTEMBER*/
+/*=======================================================Wrapper Main===============================================================*/
+.wrapper {height:100%; position: relative;	margin:0px auto; min-width:1024px; bor der:1px solid red;}
+.wrapper:before, .wrapper:after {content: " "; display: table}
+.wrapper:after {clear: both}
+#innerWrapperStart{padd ing-top:75px; height:100%;}
+/*========Media Query For Wrapper Main===========*/
+@media (max-width:1024px) {
+.con tainer, .wrapper{width:1024px !important;}
+}
+@media (max-width:1279px){
+.conta iner, .wra pper{width:auto;}
+}
+@media (max-width:1439px){
+.con tainer, .wr apper{width:auto;}
+}
+@media (min-width:1440px){
+.cont ainer, .wra pper{width:1440px;}
+}
+/*=======================================================Top Sticky Fixed Part Don't Delete this ============================================================*/
+.topDontDel{position:fixed; top:0px; left:0px; width:100%; z-index:-1; height:57px; border-bottom:1px solid #e6e6e6;background:#ffffff;}
+.botDontDel{position:fixed; bottom:0px; left:0px; width:100%; height:51px; border-top:1px solid #e6e6e6;}
+
+/*=======================================================Gutter ============================================================*/
+.gutter{ padding:56px 0px 0px 0px; margin:0px 0px 0px 201px; bor der:1px solid green; /* margin-left:200px; 22Feb*/}
+@media (max-width:1279px){
+.gutter{margin-left:80px !important;}
+.left-panel{width:80px;}
+.addSticky{position: fixed; top:60px; wi dth:calc(100%-80px);}
+}
+
+/*=======================================================Top Header ============================================================*/
+.fixTop .TopHeadSticky { position:fixed; /*width:auto;*/ width:100%; z-index:99; background:#fff; right:0px; l eft:0px; paddi ng-left:200px;}
+
+
+/*=======================================================Left Part ============================================================*/
+.left-panel{background-color:#112233; position:fixed; width:200px; height:100%; z-index:99;}
+#logoContainer{display:table-cell; width:200px; height:56px; background:#45a3e6 ; border-bottom:1px solid #518fbb; overflow:hidden;}
+#logo{ background: url("../images/logo.png") 0px 1px no-repeat; background-size:100% auto; display: block; height: 37px; text-indent: -9999em; width: 100px; margin:8px 0 0 15px; float:left;}
+@media (max-width:1279px){
+.left-panel{width:80px;}
+#logoContainer{ width:80px;}
+.fixTop .TopHeadSticky {pad ding-left:80px;}
+#logo{ background: url("../images/logo-icon.png") 0px 1px no-repeat; background-size: 37px auto; display: block; height: 37px; text-indent: -9999em; width: 60px; margin:8px 0 0 20px; float:left;}
+}
+
+/*****************************************
+Structure
+*****************************************/	
+.page-header{ border-bottom: 0px solid transparent; height: 57px; margin:0px; padding:0px;  display:table; width:100%; vertical-align:middle;
+borde r-image: linear-gradient(to right, red 10%, blue 100%);
+  bor der-image-slice:1;
+}
+.page-header .headingPart, .page-header .rightActionPart{display:table-cell; vertical-align:middle; text-align:left; padding:0px 15px; border-bottom:1px solid #ededed;}
+.page-header .headingPart h1{ margin:0px; letter-spacing:1px; font-size:20px; font-weight:400; color:#112233; font-family:'Oswald', sans-serif; text-transform: uppercase; }	
+
+
+/*****************************************
+Footer
+*****************************************/
+/*footer{border-top:1px solid #e6e6e6; background:#fff; height: 51px; position:fixed; bottom:0; width:100%; margin: 10px 0 0 15px; padding: 15px 0; color:#333; font-size:12px;}
+footer .list-inline > li{padding:0px 0px 0px 20px;}
+footer p{display:inline-block;}
+footer a{color:#9ba3a8;}*/
+
+/*****************************************
+Common for all Pages
+*****************************************/
+.updatedTime{ color:#a7a7a7; font-size:12px; margin:0px; line-height:21px;}
+
+/*****************************************
+Bootstrap Css Overwrite
+*****************************************/
+.row{ margin-top:15px; margin-bottom:15px;}
+.panel {
+    background-color: #f9f9f9;
+    border: 0px solid transparent;
+    border-radius: 4px;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+    margin-bottom: 20px;
+}
+.panel-default {
+    border-color: transparent;
+}
+.panel-default > .panel-heading {
+    background-color: #f9f9f9;
+    border-color:transparent;
+    color: #333;
+	display:table;
+	vertical-align:middle;
+	width:100%;
+}
+.panel-heading {
+    border-bottom: 0px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding: 10px 15px;
+}
+.panel-heading .headingBlk{margin:0px; padding:0px; display:table-cell; vertical-align:middle;}
+.panel-heading h1{ font-size:14px; font-family:'Open Sans', sans-serif; color:#333; font-weight:600; letter-spacing:0.3px; text-transform:uppercase; float:left;margin:0px; padding:0px;}
+.panel-footer {
+    background-color: #f9f9f9;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top: 0px solid #ddd;
+    padding: 10px 15px;
+}
+
+.panel-body {
+    padding: 15px;
+	hei ght:250px;
+}
+
+
+/*****************************************
+For Dashboard and Report page Slider
+*****************************************/
+.gridChartsValue{ margin:20px 0px; padding:0px; list-style:none; display:table; width:100%;}
+.gridChartsValue li{ display:table-cell; vertical-align:middle; text-align:center;}
+.gridChartsValue li + li{ border-left:1px solid #e6e6e6;}
+.gridChartsValue li .chartval{font-weight:600; color:#000; font-size:20px;}
+.gridChartsValue li .chartval span{color:#6cd0cd !important; margin-right:5px;}
+.gridChartsValue li .chartsTxt{font-weight:400; color:#000; font-size:12px; margin-top:10px;}
+
+.gridChartsValueVer{ margin:0px 0px 20px 0px; padding:0px; list-style:none; display:table; width:100%; height:300px;}
+.gridChartsValueVer li{ display:table-cell; vertical-align:middle; text-align:center; width:100%; margin:20px 0px 10px 0px;  height: 300px;}
+.gridChartsValueVer li .chartval{font-weight:600; color:#000; font-size:20px;}
+.gridChartsValueVer li .chartval span{color:#6cd0cd !important; margin-right:5px;}
+.gridChartsValueVer li .chartsTxt{font-weight:400; color:#000; font-size:12px; margin-top:5px;}
+.verticalbxslider > li {  left: -38px;   display: block;  height: 300px !important;}

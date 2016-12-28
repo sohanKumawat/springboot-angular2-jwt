@@ -1,0 +1,53 @@
+@charset "utf-8";
+/*For Calender UI*/
+.msgAICalender{ position:relative; margin:0px 15px; padding:0px; display:block; float:right;}
+.msgAICalender a{text-decoration:none; color:#333; margin:0px; padding:0px;}
+.msgAICalender a .menu-arrow { -webkit-transition: -webkit-transform 0.15s; -o-transition: -o-transform 0.15s; transition: transform .15s; display: inline-block; font-family: FontAwesome; text-rendering: auto; line-height: 21px; font-size: 10px;
+  -webkit-font-smoothing: antialiased;  -moz-osx-font-smoothing: grayscale;  -webkit-transform: translate(0, 0);  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);  transform: translate(0, 0); margin-left:5px;}
+.msgAICalender a .menu-arrow:after { content: '\f054';}
+.menu-arrowDown {display: inline-block; font-family: FontAwesome; text-rendering: auto; line-height: 21px; font-size: 10px;
+  -webkit-font-smoothing: antialiased;  -moz-osx-font-smoothing: grayscale; -ms-transform: rotate(90deg) !important;  -webkit-transform: rotate(90deg) !important;  -o-transform: rotate(90deg) !important;  transform: rotate(90deg) !important; margin-left:5px;}
+.menu-arrowDown:after { content: '\f054';}  
+.msgAICalender .calList{ position:absolute; z-index:99; right:-6px; top:25px; background:#03070a; border-radius:4px; width:200px; padding:8px 15px;}
+.msgAICalender .calList::before {border: medium solid transparent; bottom: 100%; content: " "; height: 0; left: 90%; pointer-events: none;  position: absolute;
+    width: 0; border-color: rgba(03, 07, 10, 0) rgba(03, 07, 10, 0) #03070a;  border-width: 6px;  margin-left: 4px; margin-top:5px;}
+.msgAICalender .calList h1{ color:#fff; font-size:14px; font-weight:600; margin:5px 0px 10px 0px; padding:0px 0px 5px 0px; text-transform:uppercase; border-bottom:1px dashed #e2e2e2; }
+.msgAICalender .calList ul.timeRange{ margin:0px 0px 10px 0px; padding:0px; list-style:none;}
+.msgAICalender .calList ul.timeRange li a{ display:block; color:#fff; text-decoration:none; padding:5px 0px; font-size:12px;}
+.msgAICalender .calList ul.timeRange li a:hover{ display:block; color:#fff; text-decoration:none; padding:5px 0px;}
+.msgAICalender .calList ul.timeRange li a.active{ display:block; color:#fff; text-decoration:none; padding:5px 0px; background:#f2f2f2;}
+
+.msgAICalender .calList ul#customRangeCalender{ margin:0px 0px 10px 0px; padding:0px; list-style:none;}
+.msgAICalender .calList ul#customRangeCalender li a{ display:block; color:#fff; text-decoration:none; padding:0px 0px; font-size:12px;}
+/*.msgAICalender .calList ul#customRangeCalender li a:hover{ display:block; color:#fff; text-decoration:none; padding:5px 0px;}
+.msgAICalender .calList ul#customRangeCalender li a.active{ display:block; color:#fff; text-decoration:none; padding:5px 0px; background:#f2f2f2;}*/
+
+
+
+/*===========================================
+Bootstrap Css Changes
+============================================*/
+#customRangeCalender .form-group { margin-bottom: 6px;}
+#customRangeCalender .datetimepicker{}
+#customRangeCalender .table-condensed > thead > tr > th, #customRangeCalender .table-condensed > tbody > tr > th, #customRangeCalender .table-condensed > tfoot > tr > th, #customRangeCalender .table-condensed > thead > tr > td, #customRangeCalender .table-condensed > tbody > tr > td, #customRangeCalender .table-condensed > tfoot > tr > td {
+    padding: 2px !important; font-size:12px; color:#fff;
+}
+#customRangeCalender .dropdown-menu{ background:#000;}
+#customRangeCalender .form-control {
+    background-color: #fff;
+    font-size: 12px;
+    height: 26px;
+    padding: 6px 5px;
+
+}
+#customRangeCalender .input-group-addon {
+    color: #555;
+    font-size: 12px;
+    padding: 5px 6px;
+}
+#customRangeCalender .datetimepicker .left, #customRangeCalender .datetimepicker .right{ cursor:pointer;}
+
+
+
+
