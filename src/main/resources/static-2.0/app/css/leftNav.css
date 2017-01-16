@@ -1,0 +1,131 @@
+#language-menu { padding-bottom: 0;	width: 100%}
+#language-menu ul {	list-style:none; padding-left:0;	margin-bottom: 0; margin-top:0}
+#language-menu ul li a { border: 0;	font-weight: 400; line-height: 1.3;	list-style: none; position: relative; text-decoration: none; color: #d1d1d1; display: block; padding: 15px; margin: 0; background-color: transparent;}
+#language-menu ul li a:hover {	color:#fff; text-decoration:none;	background: #081018}
+.languageShow li:hover .languagePop {display: block;}
+.languagePop {margin: 0;	padding: 0;	background: rgba(7,15,23,.9);	width: 160px;	border-radius: 4px;	position: absolute;	top: 8px;	left: 210px;
+	z-index: 99999;	display: none;}
+.languagePop::before {	border-color: transparent #252c34 transparent transparent;	border-image: none;	border-style: solid; border-width: 10px; content: "";
+	display: inline-block;	position: absolute;	right: 100%; top: 8px;}
+.languagePop h1 { font-size: 14px;	color: #fff; padding: 10px 15px; margin: 0;	font-weight: 600;}
+.languagePop ul { margin: 0;	padding: 0 0 2px;	list-style: none}
+.languagePop ul li {width: auto!important;	padding: 0!important;	margin: 0;	display: block!important;}
+.languagePop ul li a {	display: block!important;	padding: 10px 15px!important; width: 100%!important; box-sizing: border-box;	color: #d1d1d1!important;
+	font-size: 14px;	margin: 0;	text-align: left;}
+.languagePop ul li a .active, .languagePop ul li a:focus, .languagePop ul li a:hover {	color: #fff!important;	text-decoration: none;	background: #070f17!important;}
+.languagePop ul li a:hover .languagePop {	display: block;}
+
+@media (max-width:1279px) {
+#language-menu ul li {	position: relative;	white-space: nowrap; width: 60px;}
+#language-menu ul li .languagePop {	top: 8px;left: 70px;z-index: 99999;}
+#language-menu ul li a { padding: 10px 15px;}
+#language-menu ul li a span { display: none; padding-left: 22px;}
+#language-menu ul li a i { margin-right: 20px!important; font-size: 20px;}
+#language-menu ul li a.active, #language-menu ul li a:active, #language-menu ul li a:focus, #language-menu ul li a:hover {	background: #081018!important;}
+}
+
+.bottom-nav {bottom: 0;	left: 0; position: absolute; width: 100%; right: 0;	z-index: 999;}
+.bottom-nav ul {margin: 0;}
+.bottom-nav ul li {	position: relative;	display: table-cell; padding: 10px 0 10px 10px;	font-size: 14px; font-weight: 400; text-decoration: none; white-space: nowrap;	vertical-align: middle;	color: #d1d1d1;	word-break: break-all;	word-wrap: break-word;	letter-spacing: .2;	width: 180px;}
+.bottom-nav ul li span { width: 90px;	white-space: pre-line;	padding-left: 10px;	word-break: break-all;	display: inline-table;	vertical-align: middle;}
+.bottom-nav ul li.active {	box-shadow: inset 0 4px 0 #2b8edf;}
+.bottom-nav ul li.blocked {	display: block;	width: 100%; background-color: #252c34;}
+.bottom-nav ul li.blocked.nav-ico {	margin: 0;}
+.bottom-nav ul li:last-child {	padding: 10px 5px 10px 2px;	width: 20px;}
+.bottom-nav ul li:last-child a { padding: 10px 10px 10px 2px;	width: 20px;	color: #d1d1d1;}
+.bottom-nav ul li:last-child a:hover {	color: #fff;}
+.bottom-nav ul li:last-child:hover .logPop {display: block;}
+.bottom-nav ul li:last-child.logPop ul li:last-child a { border-bottom: none;	padding: 10px 20px;	display: block;	width: 180px;}
+.bottom-nav ul li .logPop {	margin: 0; padding: 1px; background: rgba(7,15,23,.9); width: 160px; border-radius: 4px; position: absolute; bottom: 8px; left: 40px;	z-index: 99999;	display: none;}
+
+
+@media screen and (max-width:1279px) {
+.bottom-nav ul li .logPop {	left: 70px;	bottom: 15px;}
+}
+
+.bottom-nav ul li .logPop:before {	border-color: transparent rgba(7,15,23,.9) transparent transparent;	border-image: none;	border-style: solid;	border-width: 10px;	content: ""; display: inline-block;	position: absolute;	right: 100%; bottom: 8px;}
+
+.bottom-nav ul li .logPop ul {margin: 0; padding: 0; list-style: none;}
+.bottom-nav ul li .logPop ul li {width: auto!important;	padding: 0!important;	margin: 0;	display: block!important;}
+.bottom-nav ul li .logPop ul li a {	display: block!important; padding: 10px 15px!important;	width: 100%!important;	box-sizing: border-box;	color: #d1d1d1!important;	font-size: 14px; margin: 0;	text-align: left;}
+.bottom-nav ul li .logPop ul li a.active, .bottom-nav ul li .logPop ul li a:focus, .bottom-nav ul li .logPop ul li a:hover { color: #fff!important;	background: #070f17; text-decoration: none;}
+
+.bottom-nav ul li .logPop ul li a i { margin-right: 5px;}
+
+@media (max-width:1279px) {
+.bottom-nav {border-top: 0}
+.bottom-nav .nav-justified li {	padding: 10px 5px;	display: block;	text-align: center;	width: 100%;}
+.bottom-nav .nav-justified li span { display: none;}
+.bottom-nav .nav-justified li:last-child { display: block;	margin: 0 auto;	text-align: center;	width: 100%;}
+.bottom-nav .nav-justified li:last-child a { color: #f2f2f2; display: block; padding: 0 0 10px;	width: 100%;}
+}
+
+.forcommon { border: 0;	font-weight: 400; line-height: 1.3;	list-style: none; margin: 0; padding: 0; position: relative; text-decoration: none;}
+.sidebar-inner { height: 100%;}
+.menu-title {padding: 12px 20px!important; letter-spacing: .035em; pointer-events: none;	cursor: default;font-size: 13px;}
+.side-menu {top: 56px;	width: 200px;	z-index: 10;	bottom: 150px;	height: 100%;	margin-bottom: -150px;	margin-top: 0; padding-bottom: 150px;	position: fixed;}
+.side-menu .waves-effect .waves-ripple { background-color: rgba(113,182,249,.4);}
+#sidebar-menu {	padding-bottom: 0;	width: 100%;}
+#sidebar-menu.label { margin-top: 2px;}
+#sidebar-menu ul, #sidebar-menu ul li {	border: 0;	font-weight: 400;	line-height: 1.3;	list-style: none;	margin: 0;	padding: 0;	position: relative;
+	text-decoration: none;}
+	
+#sidebar-menu ul li .menu-arrow {	-webkit-transition: -webkit-transform .15s;	-o-transition: -o-transform .15s; transition: transform .15s;	position: absolute;	right: 20px;	display: inline-block;	font-family: FontAwesome;	text-rendering: auto;	line-height: 22px;	font-size: 12px;	-webkit-font-smoothing: antialiased;	-moz-osx-font-smoothing: grayscale;	-webkit-transform: translate(0, 0);	-ms-transform: translate(0, 0);
+	-o-transform: translate(0, 0);	transform: translate(0, 0);}
+#sidebar-menu ul li .menu-arrow:before { content: '\f054';}
+#sidebar-menu ul li a {	border: 0;	font-weight: 400;	line-height: 1.3;	list-style: none;	position: relative;	text-decoration: none;	color: #d1d1d1;
+	display: block;	padding: 12px 15px;	margin: 0;	background-color: transparent;}
+#sidebar-menu ul li a.drop-arrow {	float: right;}
+#sidebar-menu ul li a.drop-arrow i { margin-right: 0;}
+#sidebar-menu ul li a span { vertical-align: middle;}
+#sidebar-menu ul li a.subdrop .menu-arrow {	-ms-transform: rotate(90deg);	-webkit-transform: rotate(90deg); -o-transform: rotate(90deg);	transform: rotate(90deg);}
+#sidebar-menu ul li i {	display: inline-block;	font-size: 16px; line-height: 17px;	margin: 0 10px 0 0;	text-align: center;	vertical-align: middle;
+	width: 20px;}
+#sidebar-menu ul li i.md {	font-size: 18px;}
+#sidebar-menu ul li .active {	background-color: #070f17;	color: #fff!important;}
+#sidebar-menu ul ul {	display: none;}
+#sidebar-menu ul ul a {	color: #fff; -webkit-transition: all .3s ease-out;	-moz-transition: all .3s ease-out;	-o-transition: all .3s ease-out;
+	-ms-transition: all .3s ease-out;	transition: all .3s ease-out;	border-left: 3px solid transparent;	display: block;	padding: 10px 20px 10px 40px;}
+#sidebar-menu ul ul a:hover { color: #fff;	background: #03070a;}
+#sidebar-menu ul ul a i {margin-right: 5px;}
+#sidebar-menu ul ul li {border-top: 0;}
+#sidebar-menu ul ul li.active a {color: #71b6f9;}
+#sidebar-menu ul ul li ul a { padding-left: 80px;}
+
+
+.nav-ico { height: 22px; width: 20px; margin-right: 10px; display: inline-block; vertical-align: middle; background-repeat: no-repeat;	background-position: center center; text-indent: 0;	background-image: url(app/images/sprite1.svg);}
+.dashboard { background-position: 0 1px;}
+.intent {background-position: -141px 1px;}
+.conversations {background-position: -20px 1px;}
+.cards {background-position: -40px 1px;}
+.ongoing, .responses {background-position: -160px 1px;}
+.reports {background-position: -80px 1px;}
+.settings {	background-position: -100px 1px;}
+.trainer { background-position: -179px 1px;}
+.prompt {background-position: -60px 1px;}
+.entities {	background-position: -200px 1px;}
+
+
+
+@media (max-width:1279px) {
+.menu-arrow, .menu-title {display: none!important;}
+.side-menu { width: 60px;	z-index: 5;}
+.side-menu.label { position: absolute;	top: 5px;	left: 35px;	text-indent: 0;	display: block!important;	padding: .2em .6em .3em!important;}
+.side-menu #sidebar-menu ul li { position: relative; white-space: nowrap;	width: 60px;}
+.side-menu #sidebar-menu ul li ul {	display: none;	margin-top: -5px; padding-top: 50px; z-index: 9999;}
+.side-menu #sidebar-menu ul li.show-menu ul {display: block;	left: 60px;	position: absolute;}
+.side-menu #sidebar-menu ul li.show-menu ul a {	background: #fff;	box-shadow: none; padding-left: 15px;	position: relative;	z-index: 6;}
+.side-menu #sidebar-menu ul li.show-menu ul a:hover {color: #71b6f9;}
+.side-menu #sidebar-menu ul li:hover ul {display: block;	left: 60px;	position: absolute;	width: 190px;	padding: 0;	margin: 0;	border: none;}
+.side-menu #sidebar-menu ul li:hover ul a {	background: #081018; border-radius: 0;	box-sizing: border-box; box-shadow: none; padding-left: 15px; position: relative;	width: 190px;	z-index: 6;	color: #d1d1d1!important;}
+
+.side-menu #sidebar-menu ul li:hover ul a:hover { color: #fff!important;}
+.side-menu #sidebar-menu ul li:hover a { position: relative; width: 250px; border-radius: 0 4px 4px 0; background: #081018; color: #fff!important;
+	border-color: #518fbb;}
+.side-menu #sidebar-menu ul li:hover a span {display: inline;}
+.side-menu #sidebar-menu ul li a {	padding: 10px 15px;}
+.side-menu #sidebar-menu ul li a.active, .side-menu #sidebar-menu ul li a:focus, .side-menu #sidebar-menu ul li a:hover { background: #081018!important;}
+.side-menu #sidebar-menu ul li a i {margin-right: 20px!important;	font-size: 20px;}
+.side-menu #sidebar-menu ul li a.subdrop {	color: #71b6f9!important;}
+.side-menu #sidebar-menu ul li a span {	display: none;	padding-left: 22px;}
+}

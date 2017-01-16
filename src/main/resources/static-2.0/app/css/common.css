@@ -1,0 +1,84 @@
+html {
+  height: 100%;
+}
+body {
+  background: #f7f9fa;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+::-webkit-input-placeholder {
+  color: #808080 !important;
+  opacity: 1;
+}
+:-moz-placeholder {
+  color: #808080 !important;
+  opacity: 1;
+}
+::-moz-placeholder {
+  color: #808080 !important;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  color: #808080 !important;
+  opacity: 1;
+}
+a{ color:#333;}
+textarea,
+input {
+  outline: none;
+}
+:focus {
+  outline-color: transparent;
+  outline-style: none;
+  -webkit-appearance: none;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+.clearfix:after {
+  clear: both;
+}
+.marginNone {
+  margin: 0px;
+}
+.marginAuto {
+  margin: 0px auto;
+}
+.listStyleNone {
+  list-style: none;
+}
+.paddingNone {
+  padding: 0px;
+}
+.borderNone {
+  border: none;
+}
+.textLeft {
+  text-align: left;
+}
+.textRight {
+  text-align: right;
+}
+.textCenter {
+  text-align: center;
+}
+.borderMain {
+  border: 1px solid #e6e6e6;
+}
+.borderRadiusS {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+}
+.box-shadowLogin {
+  box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+.bdrbottom{ border-bottom:1px solid #e6e6e6;}

@@ -1,0 +1,5 @@
+@charset "utf-8";
+/* CSS Document */
+input[type=checkbox]:not(old){wid th: 28px; margin: 0; padding: 0; opacity:0;}
+input[type=checkbox]:not(old) + label{font-weight:400; color:#000; font-size:14px; display: inline-block; background: url('../images/learning-check.png') no-repeat 0px 0px; line-height: 22px; margin-left: -20px; padding-left: 30px;}
+input[type=checkbox]:not(old):checked + label{background-position : 0 -130px;}

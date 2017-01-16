@@ -1,0 +1,23 @@
+  <div class="rightActionPart">
+        <div class="msgAICalender pull-right"> <a href="javascript:void(0);" (click)='toggleCalenderView()'>{{selectedDateValue}} <span  [ngClass]="{'menu-arrow': toggleFlag,'menu-arrowDown':!toggleFlag}"></span></a>
+          <div class="calList" *ngIf="toggleFlag">
+            <h1>Date Range</h1>
+            <ul class="timeRange">
+              <li><a href="javascript:void(0);" (click)='changeDateValue("1 Day")'>24 Hours</a></li>
+              <li><a href="javascript:void(0);" (click)='changeDateValue("7 Day")'>Last 7 Days</a></li>
+              <li><a href="javascript:void(0);" (click)='changeDateValue("30 Day")'>Last 30 Days</a></li>
+              <li><a href="javascript:void(0);" (click)='changeDateValue("3 Day")'>Last 3 Months</a></li>
+            </ul>
+            <h1>Custom Range</h1>
+            <ul id="customRangeCalender">
+              <li>
+                <div class="dropdown form-group">
+                  <label class="" style="color:#fff; font-weight:400; font-size:12px;">Start Date</label>
+                  <my-date-range-picker [options]="myDateRangePickerOptions"
+                  (dateRangeChanged)="onDateRangeChanged($event)"></my-date-range-picker>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div> 

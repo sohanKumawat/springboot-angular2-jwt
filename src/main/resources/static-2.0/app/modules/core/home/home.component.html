@@ -1,0 +1,60 @@
+
+<div class="topDontDel"></div>
+<div class="wrapper"> 
+  <!-- Left Side NavBar -->
+  <aside class="left-panel">
+    <div class="left side-menu">
+   <!--    <div id="language-menu">
+        <ul class="languageShow">
+          <li><a href="javascript:void(0);" style="background:#000;" >
+          <i class="nav-ico dashboard"></i><span>Region: {{regionName}}</span></a>
+            <div class="languagePop">
+              <h1>Select Region</h1>
+              <ul>
+                <li><a href="javascript:void(0);" ng-click="regionName='All'">All</a></li>
+                <li><a href="javascript:void(0);" ng-click="regionName='Vietnum'">Vietnum</a></li>
+                <li><a href="javascript:void(0);" ng-click="regionName='Indonesia'">Indonesia</a></li>
+                <li><a href="javascript:void(0);" ng-click="regionName='franch'">franch</a></li>
+                <li><a href="javascript:void(0);" ng-click="regionName='USA'">USA</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div> -->
+      <div class="sidebar-inner slimscrollleft">
+        <div id="sidebar-menu">
+          <ul class="list-unstyled">
+           <!-- <li class="has_sub"> <a href="#Dashboard" ng-class="{active: isActive('/Dashboard') }" class="waves-effect"><i class="nav-ico dashboard"></i>
+           <span>Dashboard</span><span class="menu-arrow"></span></a>
+              <ul class="list-unstyled">
+                <li><a href="javascript:void(0);"><i class="fa fa-user" aria-hidden="true"></i> Link One</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-user" aria-hidden="true"></i> Link Two</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-user" aria-hidden="true"></i> Link Three</a></li>
+              </ul>
+            </li> -->
+           <li><a  [routerLink] ="['dashboard']" routerLinkActive="active"><i class="nav-ico dashboard"></i><span>Dashboard</span></a></li>
+            <li><a [routerLink] ="['intent']" routerLinkActive="active"><i class="nav-ico intent"></i><span>Intent</span></a></li>
+          </ul>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <div class="bottom-nav">
+      <ul class="nav-justified list-unstyled">
+        <li><img src="app/images/3.jpg" class="img-circle mask" title="Shobhit" width="40px"> <span class="hidden-name">Shobhit</span></li>
+        <li><a href="javascript:void(0);"><i class="fa fa-power-off" aria-hidden="true"></i></a>
+          <div class="logPop">
+            <ul>
+              <!-- <li><a href="#profile"><i class="fa fa-user" aria-hidden="true"></i> My Profile</a></li>
+              <li><a href="#Setting"><i class="fa fa-cog" aria-hidden="true"></i> Settings</a></li> -->
+              <li><a  [routerLink]="['/login']"> <i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </aside>
+  <router-outlet></router-outlet>
+  <!-- End Left Side NavBar -->
+ 
+</div>

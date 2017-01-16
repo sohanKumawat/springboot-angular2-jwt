@@ -1,0 +1,12 @@
+@charset "utf-8";
+.filterDays{ margin:3px 0px 0px 10px; padding:0px; font-size:14px; color:#000; font-weight:400;}
+.filtersDayslists{ margin:20px 0px; padding:0px; list-style:none;}
+.filtersDayslists li{ display:inline-block; width:16%; margin:0px 0px 25px 0px; padding:0px;}
+.filterDays > ul { list-style:none;   margin: 0;   padding: 0;}
+.filterDays > ul > li{ display:inline-block; margin:0px 10px 0px 0px;  border:1px solid transparent; border-radius:4px; cursor:pointer; padding:0px 10px; position:relative;}
+.filterDays > ul > li span{ display:none; position:absolute; padding:2px 4px; text-align:center; right:-7px; top:-8px; cursor:pointer; border:1px solid #e6e6e6; background:#fff; border-radius:50%; font-size:8px;font-weight:600; }
+.filterDays > ul > li:hover{ background:#fff; border:1px solid #e6e6e6;}
+.filterDays > ul > li:hover span{display:block;}
+.filtersBtn{ margin:0px 0px 20px 0px; padding:0px; list-style:none;}
+.filtersBtn li{ display:inline-block;  margin:0px 0px 0px 20px ; padding:0px;}/* CSS Document */
+

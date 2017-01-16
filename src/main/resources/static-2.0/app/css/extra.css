@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* CSS Document */
+input:focus{outline:none; box-shadow:none;}
+
+/*
+================================================
+Problem Creator Class in insights page drop down
+================================================
+:focus {
+  outline-color: transparent;
+  outline-style: none;
+  -webkit-appearance:none;
+}*/
+
+.textTitlecase{text-transform:capitalize !important;}
+.fontw-300{	font-weight:300;}
+.fontw-400{	font-weight:400;}
+.fontw-600{	font-weight:600;}
+.fontw-700{	font-weight:700;}
+.fontw-800{	font-weight:800;}
+
+input::-moz-placeholder { opacity:1;}
+input::-o-placeholder {opacity:1;}
+input::-ms-placeholder {opacity:1;}
+input::-webkit-placeholder {opacity:1;}
+::-webkit-input-placeholder { color:#666; opacity:1;}
+:-moz-placeholder {color:#666; opacity:1; }
+::-moz-placeholder { color:#666; opacity:1;}
+:-ms-input-placeholder {color:#666; opacity:1;}
+input:focus {outline: none; border:none;}
+
+
+
+.height100per{height:100%;}
+.Dummyheight{ height:15px; background:#f5f5f5;}
+.bgNone{background:none !important; background-color:none;}
+.bgf7f9fa{background:#f7f9fa !important;}
+.bgWhitePadB15{background-color:#fff; padding-bottom:15px; overflow:hidden;}
+.bgpurple{background: #9c79cd;}
+.bgred{background: #e55a57;}
+.bglightGreen{background: #53d192;}
+.bgyellow{background: #ffd100;}
+.bgblack{background: #2e292d;}
+.bgFcFAFB{background:#fcfafb;}
+.bgf6f7f9{ background-color:#f6f7f9;}
+.bgWhite{ background-color:#fff !important;}
+.bg46a3e6{ background-color: #46a3e6 !important;}
+
+
+
+a:hover, a:active, a:focus {outline: none !important;    text-decoration: none !important;}
+.no-mar{margin:0px;}
+.no-pad{padding:0px;}
+.displayNone{display: none !important;}
+.dplayTable{display:table;}
+.dplayTabCell{display:table-cell;}
+.valign{ vertical-align:middle;}
+.width100per{width:100%;}
+.overflowHidden{ overflow:hidden;}
+.marTB20px{margin-top:20px !important; margin-bottom:20px !important;}
+.marT65px{margin-top:65px !important;}
+.marLR10px{margin-left:10px !important; margin-right:10px !important;}
+.marL115px{margin-left:115px !important;}
+.marR5px{margin-right:5px !important;}
+.marR15px{margin-right:15px !important;}
+.MarTR1815Pno { margin: 18px 15px;    padding: 0px !important;}
+.MarT20px{margin-top:20px !important;}
+.MarT10px{margin-top:10px !important;}
+.NoMarLR{margin-left:0px !important; margin-right:0px !important;}
+.MarB25px{margin-bottom:25px;}
+.MarB35{margin-bottom:35px;}
+.marBNone {margin-bottom: 0;}
+.topPaddingM{ padding-top:130px;}
+.topPadding{ padding-top:70px;}
+.padR10px{padding-right:10px !important;}
+.padB10px{ padding-bottom:10px;}
+.PadLR10px{padding-left:10px; padding-right:10px;}
+.PadLR20px{padding-left:20px; padding-right:20px;}
+.pad3_12px{padding: 3px 12px;}
+.pad10px{ padding:10px;}
+.pad15px{ padding:15px;}
+.padBot0px{padding-bottom:0px;}
+.color9c9c9c{color:#9c9c9c;}
+.colorpurple{color:#9b79cf;}
+.colorPink{color:#e35957;}
+.greencolor{color:#5ba611;}
+.redcolor{color:#d0021b;}
+.orangecolor{color:#F90;}
+.bluecolor{color:#46a3e6;}
+.color808080{color: #808080 !important;}
+.green{color:#308e0c/*16a4a4*/;}
+.good{color:#666/*16a4a4*/;}
+.red, .bad{color:#bd0218 !important;}    
+.light-blue{color:#3090ea;}        
+.fs14{font-size:14px;}
+.fs12{font-size:12px;}
+.fs13{font-size:13px;}
+.botSpace{height:16px; width:100%; display:table;}
+.topCalc{ float:right; background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width:auto;}
+.proName{ font-size:13px; font-weight:600; color:#5190bb; line-height:18px; word-break:keep-all; padding-bottom:0px;}
+.category{ font-size:12px; color:#b5b5b5; line-height:18px; word-break:break-all;}
+.price{ font-size:12px; color:#999999;}
+.removetag{color:#dd0e0e !important;}
+.Notemsg{color:#b7b7b7; text-align:center; line-height:20px; margin:20px auto; width:80%;}
+.forTopBotPad10px{padd ing-top:10px;padding-bottom:10px;}
+.pageTitleHeading{ font-size:20px; margin:0px 0px 10px 0px; padding:0px; font-weight:400;}
+.modal-body{padding:0px;}

@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* CSS Document */
+#sticky {background: #f2f2f2; bor der:1px solid #e2e2e2; margin: 0px; padding: 0px; pad ding:10px; box-sizing: border-box;	overflow: hidden;w idth:100%;}
+
+/*=======================================
+Top Four Digest Block Dashboard
+=========================================*/
+.digestBlk { background: #f9f9f9;	width: 100%;	height: auto;	margin: 0px;	padding: 20px 0px;}
+.digestBlk .BlkHeading { font-size: 14px; text-align: center; display: table;	margin: 0px; padding: 0 10px 15px; color:#000;	width:100%;}
+.digestBlk .BlkCount {font-family: 'Oswald', sans-serif; font-size: 36px; text-align: center; display: table; margin: 0px; padding: 0 10px 10px;
+color: #000; width: 100%;}
+.digestBlk .BlkGraph {display:table; margin: 0px; padding:0px;	height:40px; vertical-align:middle;	text-align:center;	width:100%;}
+.digestBlk .BlkGraph .imgContainer {text-align: center;	vertical-align: middle;	display: table-cell; padding: 0px;	margin: 0px; width:100%;}
+/*=============================================
+Click on arrow show and hide Graph change Icons
+===============================================*/
+.graphChangeIcons {	border-radius:4px 0 0 4px;	height: 24px; margin: 10px 0 0;	min-width:106px; overflow: hidden;	position:relative;	display:table-cell;	text-align:right;}
+.graphChangeIcons .selectedIconGraph {position:absolute; right:0px;	top:0px;}
+.graphChangeIcons .selectedIconGraph i{font-size:20px; vertical-align:middle;}
+.graphChangeIcons .slideIcons {	position: absolute;	right: -120px;	top: 2px;	z-index: 1;	background: #f9f9f9;}
+.graphChangeIcons .slideIcons ul {	margin: 0px;	padding: 0px;	list-style: none;	display: table;}
+.graphChangeIcons .slideIcons ul li {display: inline-block;	width: 20px;	height: auto;	display: table-cell;	vertical-align: middle;	text-align: center;
+	margin: 0px;	padding: 0px 0px 0px 5px;}
+.graphChangeIcons .slideIcons ul li a {	display: block;	text-decoration: none;}
+.graphChangeIcons .slideIcons ul li a img {	width: 20px;}
+.graphChangeIcons .slideIcons ul li.first a { background: url(app/images/icon1.png) 0px 0px no-repeat;	background-size: 20px;	width: 20px;	height: 20px;
+	display: block;}
+.graphChangeIcons .slideIcons ul li.first a.active { background: url(app/images/icon1A.png) 0px 0px no-repeat;	background-size: 20px;	width: 20px;
+	height: 20px;	display: block;}
+.graphChangeIcons .slideIcons ul li.sec a {	background: url(app/images/icon2.png) 0px 0px no-repeat; display: block; background-size: 20px;	width: 20px;
+	height: 20px;}
+.graphChangeIcons .slideIcons ul li.sec a.active {	background: url(app/images/icon2A.png) 0px 0px no-repeat;	display: block;	background-size: 20px;	width: 20px; height: 20px;}
+.graphChangeIcons .slideIcons ul li.third a { background: url(app/images/icon3.png) 0px 0px no-repeat;	display: block;	background-size: 20px;	width: 20px;	height: 20px;}
+.graphChangeIcons .slideIcons ul li.third a.active {background: url(app/images/icon3A.png) 0px 0px no-repeat; display: block; background-size: 20px; width: 20px; height: 20px;}
+.graphChangeIcons .slideIcons ul li.fourth a {	background:url(app/images/icon4.png) 0px 0px no-repeat; display: block;	background-size: 20px;	width: 20px;
+height: 20px;}
+.graphChangeIcons .slideIcons ul li.fourth a.active { background: url(app/images/icon4A.png) 0px 0px no-repeat;	display: block;	background-size: 20px;	width: 20px;height: 20px;}
+.graphChangeIcons .selectedIconGraph ul { margin: 0px;	padding: 0px; list-style: none;	display: table;}
+.graphChangeIcons .selectedIconGraph ul li {display:inline-block;	width:auto; height:auto;	display:table-cell; vertical-align:middle; text-align:center;	margin: 0px; padding: 0px 0px 0px 5px;}
+.graphChangeIcons .selectedIconGraph ul li + li {display: inline-block;	width: 20px; height: auto;	display: table-cell; vertical-align: middle; text-align: center;	margin: 0px;padding: 0px 0px 0px 5px;}
+.graphChangeIcons .selectedIconGraph ul li a {display: block; text-decoration: none;}
+.graphChangeIcons .selectedIconGraph ul li a img {width: 20px;}
+
+/*===============================================
+For Dashboard and Report page Slider bottom Value
+=================================================*/
+.gridChartsValue{ margin:20px 0px; padding:0px; list-style:none; display:table; width:100%;}
+.gridChartsValue li{ display:table-cell; vertical-align:middle; text-align:center;}
+.gridChartsValue li + li{ border-left:1px solid #e6e6e6;}
+.gridChartsValue li .chartval{font-weight:600; color:#000; font-size:20px;}
+.gridChartsValue li .chartval span{color:#6cd0cd !important; margin-right:5px;}
+.gridChartsValue li .chartsTxt{font-weight:400; color:#000; font-size:12px; margin-top:10px;}
+
+.gridChartsValueVer{ margin:0px 0px 20px 0px; padding:0px; list-style:none; display:table; width:100%; height:300px;}
+.gridChartsValueVer li{ display:table-cell; vertical-align:middle; text-align:center; width:100%; margin:20px 0px 10px 0px;  height: 300px;}
+.gridChartsValueVer li .chartval{font-weight:600; color:#000; font-size:20px;}
+.gridChartsValueVer li .chartval span{color:#6cd0cd !important; margin-right:5px;}
+.gridChartsValueVer li .chartsTxt{font-weight:400; color:#000; font-size:12px; margin-top:5px;}
+.verticalbxslider > li {  left: -38px;   display: block;  height: 300px !important;}
+
+
+/******************
+Css for chart
+********************/
+title + rect {display: none;}
+rect + path {display: none;}
+.h ighcharts-legend {display: none;}
+.highcharts-title{display:none;}
+.highcharts-tooltip span {
+   z-index: 99999 !important;
+   background:#ffffff !important;
+   border-radius:4px !important;
+   opacity: 1 !important;
+   overflow:hidden;
+}
+.baby{
+	color:red;
+}
+
+

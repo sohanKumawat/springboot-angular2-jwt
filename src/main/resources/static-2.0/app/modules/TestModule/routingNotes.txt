@@ -1,0 +1,33 @@
+Notes -
+Router only supports one primary unnamed outlet per template.
+<router-outlet></router-outlet>
+
+A template can also have any number of named outlets. Each named outlet has its own set of routes with their own components. 
+Multiple outlets can be displaying different content, determined by different routes, all at the same time
+x.html or x.ts can have one unnamed outlet and multiple named outlet
+<router-outlet></router-outlet>
+<router-outlet name="popup"></router-outlet>
+
+Route declaration of named outlet -->
+ {
+  path: 'compose',
+  component: ComposeMessageComponent,
+  outlet: 'popup'
+},
+<a [routerLink]="[{ outlets: { popup: ['compose'] } }]">Contact</a>
+this.router.navigate([{ outlets: { popup: ['compose'] }}]); //clear the popup outlet
+this.router.navigate([{ outlets: { popup: null }}]); //clear the popup outlet
+
+/*************** PASSING ROUTE PARAMETER ***********************/
+ 1)  <a [routerLink]="['/crisis-center', 1]">Dragon Crisis</a>  -->crisis-center/1 and route config will be 
+     crisis-center/:id
+     
+ 2)  <a [routerLink]="['/crisis-center', { foo: 'foo' }]">Crisis Center</a>   // this is passing url query 
+     parameter  crisis-center?foo=foo  
+     
+ 3)  router is instance of Router service and route is instance of ActivatedRoute. 
+     this.router.navigate([crisis.id], { relativeTo: this.route });       // it navigate to currentRoute/id
+ 4) this.router.navigate(['../', { id: crisisId, foo: 'foo' }], { relativeTo: this.route });
+    Note - The route goes up a level (../) syntax. If the current crisis id is 1, the 
+    resulting path back to the crisis list is /crisis-center/;id=3;foo=foo.
+     

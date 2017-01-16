@@ -1,0 +1,358 @@
+<!-- <div class="col-md-6 col-md-offset-3">
+<div> This is a dashboard module  </div>
+<div *ngFor="let options of chartList">
+ <chart [options]="options" >  </chart>
+ </div>
+</div>
+ -->
+
+ <div class="fixTop">
+  <div class="TopHeadSticky">
+    <header class="page-header">
+      <div id="logoContainer"> <a href="javascript:void(0);" id="logo">MSG.AI</a> </div>
+      <div class="headingPart">
+       <!--  <button id="mybutton" value="click">click me</button>
+        <h5 class='baby'> h5</h5>
+         <div class="graphChangeIcons">
+                <div class="selectedIconGraph">
+                  <ul>
+                    <li><a href="javascript:void(0);"> <i class="fa fa-caret-left" aria-hidden="true" bs-tooltip="" title="" data-placement="bottom" data-html="true" data-toggle="tooltip" data-original-title="Click here for more graphs"></i> </a></li>
+                    <li><a href="javascript:void(0);"><img src="app/images/icon1A.png"/></a></li>
+                  </ul>
+                </div>
+                  <div class="slideIcons">
+                  <ul>
+                    <li class="first"> <a href="javascript:void(0);" bs-tooltip="" title="" data-placement="bottom" data-html="true" data-toggle="tooltip" data-original-title="Line Chart"></a> </li>
+                    <li class="sec"> <a href="javascript:void(0);" bs-tooltip="" title="" data-placement="bottom" data-html="true" data-toggle="tooltip" data-original-title="Pie Chart"></a> </li>
+                    <li class="third"> <a href="javascript:void(0);" bs-tooltip="" title="" data-placement="bottom" data-html="true" data-toggle="tooltip" data-original-title="stack over chart"></a> </li>
+                    <li class="fourth"> <a href="javascript:void(0);" bs-tooltip="" title="" data-placement="bottom" data-html="true" data-toggle="tooltip" data-original-title="3D Chart"></a> </li>
+                  </ul>
+                </div>
+              </div> -->
+        <h1>Dashboard</h1>
+      </div>
+     <!--   <my-date-range-picker [options]="myDateRangePickerOptions" (dateRangeChanged)="onDateRangeChanged($event)"></my-date-range-picker> -->
+      <div class="rightActionPart">
+       <!--  <div class="updatedTime pull-right">Updated 10 min ago.</div>
+        <div class="pull-right marR15px"><a href="javascript:void(0);">Filters</a></div> -->
+        <div class="msgAICalender pull-right"> <!-- <a href="javascript:void(0);">Calendar<span></span></a> -->
+      <custom-date-picker (updateDateValue)="updateSelectedDateValue($event)"></custom-date-picker>
+     
+      <!--     <div class="calList" ng-hide="calenderBlock">
+            <h1>Time Range</h1>
+            <ul class="timeRange">
+              <li><a href="javascript:void(0);" ng-click="timeRange='24 Hours'">24 Hours</a></li>
+              <li><a href="javascript:void(0);" ng-click="timeRange='Last 7 Days'">Last 7 Days</a></li>
+              <li><a href="javascript:void(0);" ng-click="timeRange='Last 30 Days'">Last 30 Days</a></li>
+              <li><a href="javascript:void(0);" ng-click="timeRange='Last 3 Months'">Last 3 Months</a></li>
+            </ul>
+            <h1>Custom Range</h1>
+            <ul id="customRangeCalender">
+              <li>
+                <div class="dropdown form-group">
+                  <label class="" style="color:#fff; font-weight:400; font-size:12px;">Start Date</label>
+                  <a class="dropdown-toggle" id="dropdownStart" role="button" data-toggle="dropdown" data-target="#" href="javascript:void(0);">
+                  <div class="input-group date">
+                    <input type="text" class="form-control" data-ng-model="dateRangeStart">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span> </div>
+                  </a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                    <datetimepicker data-ng-model="dateRangeStart" data-datetimepicker-config="{ dropdownSelector: '#dropdownStart', renderOn: 'end-date-changed' }" data-on-set-time="startDateOnSetTime()" data-before-render="startDateBeforeRender($dates)"></datetimepicker>
+                  </ul>
+                </div>
+                <div class="dropdown form-group">
+                  <label style="color:#fff; font-weight:400; font-size:12px;">End Date</label>
+                  <a class="dropdown-toggle" id="dropdownEnd" role="button" data-toggle="dropdown" data-target="#" href="javascript:void(0);">
+                  <div class="input-group date">
+                    <input type="text" class="form-control" data-ng-model="dateRangeEnd">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span> </div>
+                  </a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                    <datetimepicker data-ng-model="dateRangeEnd" data-datetimepicker-config="{ dropdownSelector: '#dropdownEnd', renderOn: 'start-date-changed' }" data-on-set-time="endDateOnSetTime()" data-before-render="endDateBeforeRender($view, $dates, $leftDate, $upDate, $rightDate)"> </datetimepicker>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+      </div>
+    </header>
+    <div class="clearfix"></div>
+  </div>
+</div>
+<div class="gutter">
+ <!-- <div id="sticky-anchor"></div>
+   <div id="sticky" ng-hide="filterBlock">
+    <div class=""  style="padding: 15px;">
+      <div class="" >
+        <div class="bdrbottom">
+          <div class="padB10px overflowHidden">
+            <div class="days pull-left cursor" ng-click="showOnlyFilters();">Filters: </div>
+            <div class="filterDays pull-left" id="message"></div>
+          </div>
+        </div>
+      </div>
+      <div ng-hide="filterSubBlock">
+        <div class="">
+          <ul class="filtersDayslists">
+            <li>
+              <input  name="check" value="Day 1" type="checkbox">
+              <label>Day 1</label>
+            </li>
+            <li>
+              <input name="check" value="Day 2" type="checkbox">
+              <label >Day 2</label>
+            </li>
+            <li>
+              <input  name="check" value="Day 3" type="checkbox">
+              <label>Day 3</label>
+            </li>
+            <li>
+              <input name="check" value="Day 4" type="checkbox">
+              <label>Day 4</label>
+            </li>
+            <li>
+              <input name="check" value="Day 5" type="checkbox">
+              <label>Day 5</label>
+            </li>
+            <li>
+              <input name="check" value="Day 6" type="checkbox">
+              <label>Day 6</label>
+            </li>
+            <li>
+              <input id="check7" name="check" value="Day 7" type="checkbox">
+              <label for="check7">Day 7</label>
+            </li>
+            <li>
+              <input name="check" value="Day 8" type="checkbox">
+              <label>Day 8</label>
+            </li>
+            <li>
+              <input name="check" value="Day 9" type="checkbox">
+              <label>Day 9</label>
+            </li>
+            <li>
+              <input name="check" value="Day 10" type="checkbox">
+              <label>Day 10</label>
+            </li>
+            <li>
+              <input name="check" value="Day 11" type="checkbox">
+              <label>Day 11</label>
+            </li>
+            <li>
+              <input name="check" value="Day 12" type="checkbox">
+              <label>Day 12</label>
+            </li>
+            <li>
+              <input name="check" value="Day 13" type="checkbox">
+              <label>Day 13</label>
+            </li>
+            <li>
+              <input name="check" value="Day 14" type="checkbox">
+              <label>Day 14</label>
+            </li>
+            <li>
+              <input name="check" value="15" type="checkbox">
+              <label>Day 15</label>
+            </li>
+            <li>
+              <input name="check" value="Day 16" type="checkbox">
+              <label>Day 16</label>
+            </li>
+            <li>
+              <input name="check" value="Day 17" type="checkbox">
+              <label>Day 17</label>
+            </li>
+            <li>
+              <input name="check" value="Day 18" type="checkbox">
+              <label>Day 18</label>
+            </li>
+            <li>
+              <input name="check" value="Day 19" type="checkbox">
+              <label>Day 19</label>
+            </li>
+            <li>
+              <input name="check" value="Day 20" type="checkbox">
+              <label>Day 20</label>
+            </li>
+            <li>
+              <input name="check" value="Day 21" type="checkbox">
+              <label>Day 21</label>
+            </li>
+          </ul>
+          <div class="clearfix"></div>
+          <ul class="filtersBtn pull-right">
+            <li><a href="javascript:void(0);">Clear All</a></li>
+            <li><a href="javascript:void(0);"  ng-click="showOnlyFilters();">Done</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <div id="innerWrapperStart">
+    <div class="container-fluid"> 
+      <!--Four Digest Widget Area-->
+      <div class=" bxslider row">
+        <div class="col-xs-3">
+          <div class="digestBlk">
+            <div class="BlkHeading">Active Users</div>
+            <div class="BlkCount">108</div>
+            <div class="BlkGraph">
+              <div class="imgContainer" >
+              <div style="width:150px; margin:0px auto;"></div>
+              </div>
+             </div>
+          </div>
+        </div>
+        <div class="col-xs-3">
+          <div class="digestBlk">
+            <div class="BlkHeading">Returning Users</div>
+            <div class="BlkCount">77.78%</div>
+            <div class="BlkGraph">
+             <div class="imgContainer" >
+              <div style="width:150px; margin:0px auto;"></div>
+             </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3">
+          <div class="digestBlk">
+            <div class="BlkHeading">Avg Conv Duration</div>
+            <div class="BlkCount">3M 4S</div>
+            <div class="BlkGraph">
+            <div class="imgContainer" >
+             <div style="width:150px; margin:0px auto;"></div>
+             </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3">
+          <div class="digestBlk">
+            <div class="BlkHeading">Total Messages Exchanged</div>
+            <div class="BlkCount">793</div>
+            <div class="BlkGraph">
+             <div class="imgContainer" >
+              <div style="width:150px; margin:0px auto;"></div>
+             </div>
+            </div>
+          </div>
+        </div>
+        
+        
+ <!--       
+       <div class="col-xs-3">
+          <div class="digestBlk">
+            <div class="BlkHeading">Returning Users</div>
+            <div class="BlkCount">77.78%</div>
+            <div class="BlkGraph">
+              <div class="imgContainer"><img src="images/graphs/prograss.png"/></div>
+            </div>
+          </div>
+        </div>
+    <div class="col-xs-3">
+          <div class="digestBlk">
+            <div class="BlkHeading">Avg Conv Duration</div>
+            <div class="BlkCount">3M 4S</div>
+            <div class="BlkGraph">
+              <div class="imgContainer"><img src="images/graphs/line-chart2.png"/></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3">
+          <div class="digestBlk">
+            <div class="BlkHeading">Total Messages Exchanged</div>
+            <div class="BlkCount">793</div>
+            <div class="BlkGraph">
+              <div class="imgContainer"><img src="images/graphs/line-chart3.png"/></div>
+            </div>
+          </div>
+        </div>
+        
+         <div class="col-xs-3">
+          <div class="digestBlk">
+            <div class="BlkHeading">Returning Users</div>
+            <div class="BlkCount">77.78%</div>
+            <div class="BlkGraph">
+              <div class="imgContainer"><img src="images/graphs/prograss.png"/></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3">
+          <div class="digestBlk">
+            <div class="BlkHeading">Avg Conv Duration</div>
+            <div class="BlkCount">3M 4S</div>
+            <div class="BlkGraph">
+              <div class="imgContainer"><img src="images/graphs/line-chart2.png"/></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-3">
+          <div class="digestBlk">
+            <div class="BlkHeading">Total Messages Exchanged</div>
+            <div class="BlkCount">793</div>
+            <div class="BlkGraph">
+              <div class="imgContainer"><img src="images/graphs/line-chart3.png"/></div>
+            </div>
+          </div>
+        </div>-->
+      </div>
+      <!--End Four Digest Widget Area-->
+      <div class="row">
+        <!-- <div class="col-xs-6"  *ngFor="let options of chartList; trackBy: trackByFn;let i = index;"> -->
+        <div class="col-xs-6"  *ngFor="let options of chartList;let i = index;">
+        <!-- <button id="mybutton" value="click" [(ngModel)]="btnId">click me</button> -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <div class="headingBlk">
+                <h1 bs-tooltip="" title="" data-placement="bottom" data-html="true" data-toggle="tooltip" class="info " data-original-title="The most important Key Performance Indicators are highlighted.">Popular Product Categories</h1>
+              </div>
+           
+          <!--     <div class="graphChangeIcons">
+                <div class="selectedIconGraph">
+                  <ul>
+                    <li><a href="javascript:void(0);"> <i class="fa fa-caret-left" aria-hidden="true" bs-tooltip="" title="" data-placement="bottom" data-html="true" data-toggle="tooltip" data-original-title="Click here for more graphs"></i> </a></li>
+                    <li><a href="javascript:void(0);"><img src="app/images/icon1A.png"/></a></li>
+                  </ul>
+                </div>
+                  <div class="slideIcons">
+                  <ul>
+                    <li class="first"> <a href="javascript:void(0);" bs-tooltip="" title="" data-placement="bottom" data-html="true" data-toggle="tooltip" data-original-title="Line Chart"></a> </li>
+                    <li class="sec"> <a href="javascript:void(0);" bs-tooltip="" title="" data-placement="bottom" data-html="true" data-toggle="tooltip" data-original-title="Pie Chart"></a> </li>
+                    <li class="third"> <a href="javascript:void(0);" bs-tooltip="" title="" data-placement="bottom" data-html="true" data-toggle="tooltip" data-original-title="stack over chart"></a> </li>
+                    <li class="fourth"> <a href="javascript:void(0);" bs-tooltip="" title="" data-placement="bottom" data-html="true" data-toggle="tooltip" data-original-title="3D Chart"></a> </li>
+                  </ul>
+                </div>
+              </div> -->
+           
+           
+            </div>
+            <div class="panel-body"> 
+              <!--Panel content--> 
+              <chart [options]="options" style="height:319px;" >  </chart>
+              
+            </div>
+            <div class="panel-footer">
+              <ul class="gridChartsValue">
+                <li>
+                  <div class="chartval"><span>+</span>20%</div>
+                  <div class="chartsTxt">Increase in Bottoms</div>
+                </li>
+                <li>
+                  <div class="chartval"><span>+</span>14%</div>
+                  <div class="chartsTxt">Increase in Sweaters</div>
+                </li>
+                <li>
+                  <div class="chartval"><span>+</span>12%</div>
+                  <div class="chartsTxt">Increase in Innerwear</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+    <div class=" clearfix"></div>
+  </div>
+</div>
+
